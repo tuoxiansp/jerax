@@ -2,7 +2,7 @@ const webpack = require('webpack')
 
 module.exports = {
   output: {
-    library: 'ReactBroadcast',
+    library: 'LibBoilerplate',
     libraryTarget: 'umd'
   },
 
@@ -17,7 +17,7 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel' }
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
     ]
   },
 

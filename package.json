@@ -1,28 +1,17 @@
 {
-  "name": "react-broadcast",
-  "version": "0.1.2",
-  "description": "A reliable way to broadcast state changes to React elements deep in the hierarchy",
-  "repository": "ReactTraining/react-broadcast",
-  "authors": [
-    "Michael Jackson",
-    "Ryan Florence"
-  ],
+  "name": "lib-boilerplate",
+  "version": "0.0.1",
+  "description": "A boilerplate for build js libs",
   "license": "MIT",
   "scripts": {
     "build": "node ./scripts/build.js",
     "build-cjs": "babel ./modules -d . --ignore '__tests__'",
-    "build-umd": "webpack modules/index.js umd/react-broadcast.js",
-    "build-min": "webpack -p modules/index.js umd/react-broadcast.min.js",
+    "build-umd": "webpack modules/index.js umd/lib-boilerplate.js",
+    "build-min": "webpack -p modules/index.js umd/lib-boilerplate.min.js",
     "prepublish": "node ./scripts/build.js",
     "release": "node ./scripts/release.js",
     "test": "npm run lint && karma start",
     "lint": "eslint modules"
-  },
-  "dependencies": {
-    "invariant": "^2.2.1"
-  },
-  "peerDependencies": {
-    "react": "15.x"
   },
   "devDependencies": {
     "babel-cli": "^6.10.1",

@@ -1,3 +1,3 @@
-export Broadcast from './Broadcast'
-export Subscriber from './Subscriber'
-
+export function start() {
+	console.log('let\'s go!')
+}
